@@ -12,12 +12,13 @@ export class OnboardingUserData {
   isOnboardingComplete: boolean;
 
   @Prop({ type: Object, default: null })
-  onboardingData?: {
+  userData?: {
     personalInfo: {
       firstName: string;
       lastName: string;
       phone?: string;
       country: string;
+      countryCode: string;
     };
     accountSetup: {
       platforms: string[];

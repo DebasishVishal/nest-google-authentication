@@ -31,7 +31,7 @@ export class OnboardingService {
       { email },
       {
         $set: {
-          onboardingData: updateData,
+          userData: updateData,
           isOnboardingComplete: true, // Explicitly update isOnboardingComplete to true
         },
       },
